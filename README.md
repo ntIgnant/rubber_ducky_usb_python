@@ -9,7 +9,6 @@ This project is a Python-based script that simulates keyboard actions to extract
 - [How it Works](#how-it-works)
 - [Usage](#usage)
 - [Known Issues](#known-issues)
-- [Contributing](#contributing)
 
 ## Project Overview
 
@@ -70,14 +69,3 @@ python3 rubber_ducky_wifi_extractor.py
 ## Known Issues
 - Admin Privileges: Running the script on a system without admin privileges will result in failure to access Wi-Fi profiles.
 - Keyboard Timing: If the system is slow, you may need to adjust the sleep timers for different parts of the script.
-
-## Contributing
-Contributions are welcome! If you find any bugs or want to suggest features, feel free to open an issue or submit a pull request.
-
-To Contribute:
-
-Fork the project.
-1. Create a new branch (git checkout -b feature-branch).
-2. Commit your changes (git commit -am 'Add new feature').
-3. Push the branch (git push origin feature-branch).
-4. Create a new Pull Request.
