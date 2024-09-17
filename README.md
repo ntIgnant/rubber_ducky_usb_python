@@ -28,3 +28,32 @@ This project mimics the behavior of a "Rubber Ducky" — a USB device that acts 
 Install the required Python libraries:
 ```bash
 pip install keyboard
+```
+
+## Instalation
+Clone the repository to your local machine:
+```bash
+  git clone https://github.com/yourusername/rubber-ducky-wifi-extractor.git
+  ```
+Navigate to the project directory:
+```bash
+cd rubber-ducky-wifi-extractor
+```
+Install the required Python libraries:
+```bash
+pip install -r requirements.txt
+```
+Ensure that Python and PowerShell are installed on your machine and that Python is added to your system’s PATH.
+
+## How it Works
+The script simulates the following sequence of events:
+
+1. Opens the Windows Run dialog using the Windows + R shortcut.
+2. Opens a PowerShell session by typing "pwsh" (if PowerShell is installed).
+3. Changes the directory to Pictures.
+4. Executes a PowerShell command (netsh wlan show profile) to get the Wi-Fi profiles stored on the system.
+5. For each Wi-Fi profile, it retrieves the password by extracting the Key Content from the netsh command output.
+6. The extracted profiles and passwords are saved in a file (pws.txt).
+7. The file is moved to the D: drive as specified.
+8. The PowerShell window is closed using Alt + F4.
+
