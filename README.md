@@ -28,3 +28,13 @@ This project mimics the behavior of a "Rubber Ducky" — a USB device that acts 
 Install the required Python libraries:
 ```bash
 pip install keyboard
+```
+
+## Instalation
+- `Clone the repository to your local machine:`
+  ``bash
+  git clone https://github.com/yourusername/rubber-ducky-wifi-extractor.git
+  ```
+- `Navigate to the project directory:`
+- `Install the required Python libraries:`
+
