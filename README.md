@@ -31,10 +31,16 @@ pip install keyboard
 ```
 
 ## Instalation
-- `Clone the repository to your local machine:`
-  ``bash
+Clone the repository to your local machine:
+```bash
   git clone https://github.com/yourusername/rubber-ducky-wifi-extractor.git
   ```
-- `Navigate to the project directory:`
-- `Install the required Python libraries:`
+Navigate to the project directory:
+```bash
+cd rubber-ducky-wifi-extractor
+```
+Install the required Python libraries:
+```bash
+pip install -r requirements.txt
+```
 
