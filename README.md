@@ -31,7 +31,7 @@ pip install keyboard
 ## Instalation
 Clone the repository to your local machine:
 ```bash
-  git clone https://github.com/yourusername/rubber-ducky-wifi-extractor.git
+git clone https://github.com/yourusername/rubber-ducky-wifi-extractor.git
   ```
 Navigate to the project directory:
 ```bash
